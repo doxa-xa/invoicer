@@ -1,0 +1,29 @@
+{
+  "name": "invoicecreator",
+  "version": "1.0.0",
+  "description": "web app that creates and issues invoices",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doxa-xa/invoicer.git"
+  },
+  "keywords": [
+    "create",
+    "issue",
+    "invoice",
+    "bill"
+  ],
+  "author": "Stoyan Todorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doxa-xa/invoicer/issues"
+  },
+  "homepage": "https://github.com/doxa-xa/invoicer#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
