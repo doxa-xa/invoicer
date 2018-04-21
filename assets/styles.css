@@ -1,0 +1,82 @@
+body{
+  background: #06f;
+}
+.container{
+  background:#fff;
+  font-family: sans-serif;
+  display:grid;
+  margin:1em;
+  font-weight:700;
+  padding:0.5em;
+  border:solid 1px #ccc;
+  border-radius:0.4em;
+  width:60%;
+  margin: 4em auto 4em;
+}
+.container h1,.container div,.container form{
+  justify-self:center;
+}
+h1{
+  grid-row:1/2;
+  font-size:2em;
+  text-align:center;
+}
+form{
+  grid-row:2/3;
+  text-align:center;
+}
+input{
+  margin:0px;
+  background:#999;
+  color:#fff;
+  padding:0.4em;
+  border:1px solid #999;
+  border-radius:0.4em;
+  font-weight:700;
+}
+.container div{
+  grid-row:3/4;
+  display:block;
+}
+.container div a{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  font-family:sans-serif;
+  color:#fff;
+  padding:0.5em;
+  border-radius:0.3em;
+  margin:0.5em auto;
+  box-shadow: 0.2em 0.2em 0.2em rgba(140,140,140,0.7);
+}
+.container div a:hover{
+  box-shadow: 0.3em 0.3em 0.3em rgba(120,120,120,0.8);
+}
+#fb{
+  border:solid 1px #039;
+  background:#039;
+}
+#fb:hover{
+  background:#026;
+}
+#goo{
+  border:solid 1px #c00;
+  background:#c00;
+}
+#goo:hover{
+  background:#900;
+}
+#lg{
+  border:solid 1px #aaa;
+  background:#aaa;
+}
+#lg:hover{
+  background:#999;
+}
+#reg{
+  border:solid 1px #093;
+  background:#093;
+}
+#reg:hover{
+  background:#062;
+}

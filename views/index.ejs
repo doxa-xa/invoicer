@@ -1,136 +1,34 @@
-<!doctype html>
-<html amp lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Invoice Creator - HOME</title>
-    <link rel="canonical" href="<!--  my link here-->">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta name="keywords" content="ivoice,invoice form blank,issue,bill,create invoice,factura,amount">
-    <meta name="description" content="In invoce creator you can create and issue invoices from your company for free. By using our invoice blank form.">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Welcome to Invoice creator you can issue invocies for free",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-      body{
-        background: #06f;
-      }
-      .container{
-        background:#fff;
-        font-family: sans-serif;
-        display:grid;
-        margin:1em;
-        font-weight:700;
-        padding:0.5em;
-        border:solid 1px #ccc;
-        border-radius:0.4em;
-        width:60%;
-        margin: 4em auto 4em;
-      }
-      .container h1,.container div,.container form{
-        justify-self:center;
-      }
-      h1{
-        grid-row:1/2;
-        font-size:2em;
-        text-align:center;
-      }
-      form{
-        grid-row:2/3;
-        text-align:center;
-      }
-      input{
-        margin:0px;
-        background:#999;
-        color:#fff;
-        padding:0.4em;
-        border:1px solid #999;
-        border-radius:0.4em;
-        font-weight:700;
-      }
-      .container div{
-        grid-row:3/4;
-        display:block;
-      }
-      .container div a{
-        display:block;
-        text-decoration:none;
-        text-align:center;
-        font-family:sans-serif;
-        color:#fff;
-        padding:0.5em;
-        border-radius:0.3em;
-        margin:0.5em auto;
-        box-shadow: 0.2em 0.2em 0.2em rgba(140,140,140,0.7);
-      }
-      .container div a:hover{
-        box-shadow: 0.3em 0.3em 0.3em rgba(120,120,120,0.8);
-      }
-      #fb{
-        border:solid 1px #039;
-        background:#039;
-      }
-      #fb:hover{
-        background:#026;
-      }
-      #goo{
-        border:solid 1px #c00;
-        background:#c00;
-      }
-      #goo:hover{
-        background:#900;
-      }
-      #lg{
-        border:solid 1px #aaa;
-        background:#aaa;
-      }
-      #lg:hover{
-        background:#999;
-      }
-      #reg{
-        border:solid 1px #093;
-        background:#093;
-      }
-      #reg:hover{
-        background:#062;
-      }
-
-    </style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-
-    </style></noscript>
+    <title>Issue an ivoice - Invoce blanks for free!</title>
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
   </head>
   <body>
     <div class="container">
-      <h1>Issue an invoice for free</h1>
-      <form class="langForm" action="/" method="post">
-        <label for="lang">Language:</label>
+      <h1><%= lang.h1%></h1>
+      <form action="/" method="POST">
+        <label for="lang"><%= lang.form.label%></label>
         <select id="lang" name="selectLang">
-          <option value="en" selected>English</option>
-          <option value="fr">French</option>
-          <option value="it">Italian</option>
-          <option value="es">Spanish</option>
-          <option value="de">German</option>
-          <option value="bg">Bulgarian</option>
-          <option value="pl">Polish</option>
-          <option value="gr">Greek</option>
+          <option value="en" selected><%= lang.form.select[0]%></option>
+          <option value="fr"><%= lang.form.select[2]%></option>
+          <option value="it"><%= lang.form.select[7]%></option>
+          <option value="es"><%= lang.form.select[3]%></option>
+          <option value="de"><%= lang.form.select[4]%></option>
+          <option value="bg"><%= lang.form.select[1]%></option>
+          <option value="pl"><%= lang.form.select[6]%></option>
+          <option value="gr"><%= lang.form.select[5]%></option>
         </select>
-        <input type="submit" name="submit" value="Choose">
+        <input type="submit" name="submit" value="<%= lang.form.submit%>">
       </form>
       <div class="auth">
-        <h4 id="lab">Login with:</h4>
+        <h4 id="lab"><%= lang.login%></h4>
         <a id="fb" href="/facebook">Facebook</a>
         <a id="goo" href="/google">Google</a>
-        <a id="lg" href="/login">Sign in</a>
-        <a id="reg" href="/register">Sign up</a>
+        <a id="lg" href="/login"><%= lang.buttons.sIn%></a>
+        <a id="reg" href="/register"><%= lang.buttons.sUp%></a>
       </div>
     </div>
   </body>
