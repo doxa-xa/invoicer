@@ -8,7 +8,7 @@ const routes = require('./routes/routes.js');
 const app = express();
 
 //managing static files
-app.use('assets',express.static('/assets'));
+app.use('/assets',express.static('assets'));
 
 //setting up view engine
 app.set('view engine','ejs');
