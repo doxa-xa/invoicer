@@ -48,7 +48,9 @@ appRoutes.get('/gr',(req,res)=>{
   res.status(200).render('index',{lang:language.gr});
 });
 //language UI redirects [END]
-
+appRoutes.get('/register',(req,res)=>{
+  res.status(200).render('register');
+});
 //routes [END]
 
 

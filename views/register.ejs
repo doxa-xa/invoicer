@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Issue an ivoice - Register User</title>
+    <link rel="stylesheet" type="text/css" href="/assets/register-styles.css">
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/">Back</a>
+      <a href="/user">Profile</a>
+    </div>
+    <div class="container">
+      <form class="userReg" action="/register" method="post">
+        <label for="company">Company</label>
+        <input id="company" type="text" name="CompanyName" placeholder="Company">
+        <label for="state">Country</label>
+        <input id="state" type="text" name="state" placeholder="Country">
+        <label for="city">City</label>
+        <input id="city" type="text" name="city" placeholder="City">
+        <label for="address">Address</label>
+        <input id="address" type="text" name="Address" placeholder="Address">
+        <label for="id">Company ID</label>
+        <input id="id" type="text" name="id" placeholder="Company ID">
+        <label for="vat">Company VAT</label>
+        <input id="vat" type="text" name="vat" placeholder="Company VAT">
+        <label for="id">Representative</label>
+        <input id="rep" type="text" name="rep" placeholder="Representative">
+        <input type="submit" name="submit" value="Add Company +">
+      </form>
+    </div>
+  </body>
+</html>
