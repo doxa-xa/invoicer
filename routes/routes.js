@@ -48,8 +48,13 @@ appRoutes.get('/gr',(req,res)=>{
   res.status(200).render('index',{lang:language.gr});
 });
 //language UI redirects [END]
+//register routes [START]
 appRoutes.get('/register',(req,res)=>{
   res.status(200).render('register');
+});
+//register routes [END]
+appRoutes.get('/company',(req,res)=>{
+  res.status(200).render('company');
 });
 //routes [END]
 
